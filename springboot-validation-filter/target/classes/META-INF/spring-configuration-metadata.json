@@ -5,6 +5,11 @@
       "sourceType": "com.master.model.UserBean",
       "name": "colorxjh",
       "type": "com.master.model.UserBean"
+    },
+    {
+      "sourceType": "com.master.model.OtherBean",
+      "name": "other",
+      "type": "com.master.model.OtherBean"
     }
   ],
   "properties": [
@@ -24,6 +29,17 @@
       "defaultValue": 0,
       "name": "colorxjh.weight",
       "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.master.model.OtherBean",
+      "defaultValue": 0,
+      "name": "other.age",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.master.model.OtherBean",
+      "name": "other.name",
+      "type": "java.lang.String"
     }
   ]
 }

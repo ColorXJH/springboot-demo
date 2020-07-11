@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb87a010-3e06-4794-a6bb-447c1195074c" name="Default Changelist" comment="" />
+    <list default="true" id="fb87a010-3e06-4794-a6bb-447c1195074c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-validation-filter/src/main/java/com/master/controller/NewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-validation-filter/src/main/java/com/master/controller/NewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-validation-filter/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-validation-filter/target/classes/META-INF/spring-configuration-metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-validation-filter/target/classes/com/master/controller/NewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-validation-filter/target/classes/com/master/controller/NewController.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/hello_world_demo/target/" />
@@ -73,7 +78,7 @@
         <entry file="file://$PROJECT_DIR$/springboot-validation-filter/src/main/java/com/master/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="148">
-              <caret line="22" column="31" lean-forward="true" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+              <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -117,11 +122,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/springboot-validation-filter/src/test/java/TestController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="42" column="26" lean-forward="true" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
+            <state relative-caret-position="228">
+              <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#324#325#0" expanded="true" />
@@ -132,10 +137,43 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springboot-validation-filter/src/main/resources/myapplication.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springboot-validation-filter/src/main/java/com/master/model/OtherBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="237">
+              <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/springboot-validation-filter/src/main/java/com/master/controller/NewController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="21" column="25" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="25" />
+            <state relative-caret-position="300">
+              <caret line="27" column="25" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/springboot-validation-filter/src/main/java/com/master/MyApp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -157,6 +195,22 @@
       <find>filter</find>
       <find>Filter</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -191,8 +245,10 @@
         <option value="$PROJECT_DIR$/springboot-validation-filter/src/main/java/com/master/controller/UserController.java" />
         <option value="$PROJECT_DIR$/springboot-validation-filter/src/main/java/com/master/model/UserBean.java" />
         <option value="$PROJECT_DIR$/springboot-validation-filter/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/springboot-validation-filter/src/main/java/com/master/controller/NewController.java" />
         <option value="$PROJECT_DIR$/springboot-validation-filter/src/test/java/TestController.java" />
+        <option value="$PROJECT_DIR$/springboot-validation-filter/src/main/resources/myapplication.properties" />
+        <option value="$PROJECT_DIR$/springboot-validation-filter/src/main/java/com/master/model/OtherBean.java" />
+        <option value="$PROJECT_DIR$/springboot-validation-filter/src/main/java/com/master/controller/NewController.java" />
       </list>
     </option>
   </component>
@@ -216,6 +272,7 @@
     <option name="width" value="1890" />
     <option name="height" value="960" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -295,17 +352,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="master" type="462c0819:PsiDirectoryNode" />
-              <item name="filter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learning_springboot_new" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learning_springboot_new" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-validation-filter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="master" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -315,21 +361,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learning_springboot_new" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learning_springboot_new" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-validation-filter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learning_springboot_new" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learning_springboot_new" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-validation-filter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -352,7 +383,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -372,7 +403,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestController.testYml">
+  <component name="RunManager" selected="Spring Boot.MyApp">
     <configuration name="TestController.testFilter1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springbootvalidationfilter" />
       <option name="PACKAGE_NAME" value="" />
@@ -442,8 +473,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestController.testYml" />
         <item itemvalue="Spring Boot.MyApp" />
+        <item itemvalue="JUnit.TestController.testYml" />
         <item itemvalue="JUnit.TestController.testUser" />
         <item itemvalue="JUnit.TestController.testSingle" />
         <item itemvalue="JUnit.TestController.testFilter1" />
@@ -472,8 +503,16 @@
       <workItem from="1594270496253" duration="3648000" />
       <workItem from="1594274188065" duration="3110000" />
       <workItem from="1594341636681" duration="2956000" />
-      <workItem from="1594451839950" duration="9588000" />
+      <workItem from="1594451839950" duration="11542000" />
     </task>
+    <task id="LOCAL-00001" summary="springboot2.0练习">
+      <created>1594464686823</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1594464686823</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -509,7 +548,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44114000" />
+    <option name="totallyTimeSpent" value="46068000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -525,29 +564,29 @@
     <editor active="true" />
     <layout>
       <window_info id="Web" order="0" sideWeight="0.50222224" side_tool="true" weight="0.2708165" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4977778" visible="true" weight="0.2708165" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4977778" visible="true" weight="0.21422797" />
       <window_info id="Structure" order="2" sideWeight="0.50222224" side_tool="true" weight="0.2708165" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Favorites" order="7" sideWeight="0.50222224" side_tool="true" weight="0.2708165" />
-      <window_info anchor="bottom" id="Java Enterprise" order="0" weight="0.32962963" />
-      <window_info anchor="bottom" id="Spring" order="1" weight="0.32962963" />
+      <window_info anchor="bottom" id="Java Enterprise" order="0" weight="0.3283859" />
+      <window_info anchor="bottom" id="Spring" order="1" weight="0.3283859" />
       <window_info anchor="bottom" id="Messages" order="2" sideWeight="0.4995958" weight="0.44814816" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" />
-      <window_info active="true" anchor="bottom" id="Run" order="5" visible="true" weight="0.42592594" />
-      <window_info anchor="bottom" id="Debug" order="6" sideWeight="0.4987874" weight="0.3074074" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.4987874" weight="0.42671615" />
+      <window_info anchor="bottom" id="Debug" order="6" sideWeight="0.4987874" weight="0.6252319" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="9" weight="0.32962963" />
+      <window_info anchor="bottom" id="TODO" order="9" weight="0.3283859" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Problems" order="12" weight="0.32962963" />
+      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.4995958" weight="0.3283859" />
+      <window_info anchor="bottom" id="Problems" order="12" weight="0.3283859" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Terminal" order="14" />
-      <window_info anchor="bottom" id="Event Log" order="15" sideWeight="0.5012126" side_tool="true" weight="0.73703706" />
+      <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.4995958" weight="0.3283859" />
+      <window_info anchor="bottom" id="Event Log" order="15" sideWeight="0.5004042" side_tool="true" weight="0.3283859" />
       <window_info anchor="right" id="Bean Validation" order="0" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
@@ -562,6 +601,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="springboot2.0练习" />
+    <option name="LAST_COMMIT_MESSAGE" value="springboot2.0练习" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/hello_world_demo/pom.xml" />
@@ -757,7 +800,7 @@
     <entry file="file://$PROJECT_DIR$/springboot-validation-filter/src/main/java/com/master/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
-          <caret line="22" column="31" lean-forward="true" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -803,10 +846,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-validation-filter/src/main/java/com/master/MyApp.java">
+    <entry file="file://$PROJECT_DIR$/springboot-validation-filter/src/test/java/TestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+        <state relative-caret-position="228">
+          <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#324#325#0" expanded="true" />
+            <element signature="e#353#354#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-validation-filter/src/main/resources/myapplication.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-validation-filter/src/main/java/com/master/model/OtherBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -815,22 +877,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/springboot-validation-filter/src/main/java/com/master/controller/NewController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="21" column="25" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="25" />
+        <state relative-caret-position="300">
+          <caret line="27" column="25" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-validation-filter/src/test/java/TestController.java">
+    <entry file="file://$PROJECT_DIR$/springboot-validation-filter/src/main/java/com/master/MyApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="42" column="26" lean-forward="true" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
+        <state relative-caret-position="210">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#324#325#0" expanded="true" />
-            <element signature="e#353#354#0" expanded="true" />
           </folding>
         </state>
       </provider>
