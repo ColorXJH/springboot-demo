@@ -1,0 +1,5 @@
+#若同时配置了application.properties和application.yml,且里面的配置相同，则.properties中的内容将会覆盖.yml中的内容
+colorxjh:
+  name: XJH
+  age: 27
+  weight: 130

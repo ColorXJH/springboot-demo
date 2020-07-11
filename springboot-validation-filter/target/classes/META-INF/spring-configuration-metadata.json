@@ -1,0 +1,29 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.master.model.UserBean",
+      "name": "colorxjh",
+      "type": "com.master.model.UserBean"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.master.model.UserBean",
+      "defaultValue": 0,
+      "name": "colorxjh.age",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.master.model.UserBean",
+      "name": "colorxjh.name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.master.model.UserBean",
+      "defaultValue": 0,
+      "name": "colorxjh.weight",
+      "type": "java.lang.Integer"
+    }
+  ]
+}
