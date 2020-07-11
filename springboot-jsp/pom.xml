@@ -10,6 +10,49 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>springboot-jsp</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <!--starter-web中包含了tomcat,不需要再单独配置-->
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <!--jstl标签库-->
+            <artifactId>jstl</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <!--主要用来支持jsp的解析和运行-->
+            <artifactId>tomcat-embed-jasper</artifactId>
+        </dependency>
 
+    </dependencies>
+
+    <build>
+        <plugins>
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+            <configuration>
+                <fork>true</fork>
+            </configuration>
+        </plugin>
+        </plugins>
+        <!--springboot多模块中使用jsp时，mvn plugin插件 spring-boot:run可以访问，main运行项目无法访问页面，加入以下资源-->
+        <!--或者在多模块时，edit configurations -> working directory设置成$MODULE_WORKING_DIR$就可以了-->
+        <resources>
+            <resource>
+                <directory>src/main/webapp</directory>
+                <targetPath>META-INF/resources</targetPath>
+                <includes>
+                    <include>**/**</include>
+                </includes>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+            </resource>
+        </resources>
+    </build>
 
 </project>
