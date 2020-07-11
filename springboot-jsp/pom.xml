@@ -8,13 +8,21 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
+    <!--部署在独立的tomcat服务器下需要打成war包-->
+    <!--<packaging>war</packaging>-->
     <artifactId>springboot-jsp</artifactId>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <!--starter-web中包含了tomcat,不需要再单独配置-->
             <artifactId>spring-boot-starter-web</artifactId>
+            <!--部署到单独的tomcat服务器上需要排除内嵌的tomcat-->
+            <!--<exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-tomcat</artifactId>
+                </exclusion>
+            </exclusions>-->
         </dependency>
         <dependency>
             <groupId>javax.servlet</groupId>
