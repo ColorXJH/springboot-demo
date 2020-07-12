@@ -25,6 +25,7 @@ public class ThymeleafController {
         model.addAttribute("flag","yes");
         List<User> lists=new ArrayList<>();
         User user1=new User();
+        model.addAttribute("habbit","sing");
         user1.setName("ColorXJH");user1.setAge(27);user1.setWeight(130);
         User user2=new User();
         user2.setName("DearBear");user2.setAge(26);user2.setWeight(110);
