@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--表明⻚页⾯面使⽤用的是 Thymeleaf 语法。-->
+<html lang="en" xmlns:th="http://wwww.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>初次使用thymeleaf</title>
+</head>
+<body>
+            <h1 th:text="${message}">hello world</h1>
+            <h3>赋值和拼接</h3>
+            <p th:text="${usename}">color</p>
+            <span th:text="'welcome to the hello world,'+${usename}"></span>
+            <h3>拼接的简写形式</h3>
+            <span th:text="|welcome to the hello world,${usename}!|"></span>
+            <h3>条件判断if/unless</h3>
+            <span>
+                <!--()内携带的是url传递的参数，多个参数之间用逗号隔开，取值为${...}-->
+                <a th:if="${flag=='yes'}" th:href="@{http:www.baidu.com(name=${usename},message=${message})}" th:text="xixi" >百度</a>
+                <!--@{...}表示传递其中url地址-->
+                <a th:unless="${flag!='no'}" th:href="@{http:www.taobao.com}" th:text="jiji" >天猫</a>
+                <!--@{/order}表示当前context下的相对路径，如果当前context为localhost:8080，则其路径为localhost:8080/order-->
+                <a th:href="@{/order}">order</a>
+            </span>
+            <h3>for循环</h3>
+                <table>
+                    <tr th:each="user,iterStat:${users}">
+                        <td th:text="${iterStat.index}">index</td>
+                        <td th:text="${user.name}">XJH</td>
+                        <td th:text="${user.age}">27</td>
+                        <td th:text="${user.weight}">130</td>
+                    </tr>
+                </table>
+            <!--iterStat为状态变量,有如下属性：-->
+                <!--1：index:下标索引（从0开始）-->
+                <!--2：count:迭代对象的索引（从1开始）-->
+                <!--3：size:被迭代对象的大小-->
+                <!--4：current:当前迭代变量-->
+                <!--5：even/odd:当前循环是否为偶数/奇数（从0开始）-->
+                <!--6：first:布尔值，当前循环变量是否是第一个-->
+                <!--7：last:布尔值，当前循环变量是否是最后一个-->
+            <h3>三目运算</h3>
+            <input th:value="${flag eq 'yes'?'是':'否'}"/>
+            <!--gt 大于  lt 小于 eq 等于 ge 大于等于 le 小于等于 ne 不等于-->
+            <h3>swith选择</h3>
+            <div th:switch="${flag}">
+                <p th:case="'yes'">是</p>
+                <p th:case="'no'">否</p>
+                <!--th:case默认选项-->
+                <p th:case="*">不知道是否</p>
+            </div>
+
+            <h1>高阶用法</h1>
+</body>
+</html>
