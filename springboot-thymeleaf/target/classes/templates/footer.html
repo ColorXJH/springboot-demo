@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<span th:fragment="frag1">frag1</span>
+<span th:fragment="frag2">frag2</span>
+
+<div id="footer1">footer1</div>
+
+<div>
+    <div id="footer2">footer2</div>
+</div>
+
+<div>
+    <span class="content">footer3</span>
+    <span class="content">footer4</span>
+</div>
+
+<div th:fragment="welcome(userName)">
+    <span th:text="|hello,| + ${userName}"></span>
+</div>
+</body>
+</html>

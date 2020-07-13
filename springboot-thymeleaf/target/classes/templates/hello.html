@@ -50,5 +50,122 @@
             </div>
 
             <h1>高阶用法</h1>
+            <h3>内联</h3>
+            <!--在本标签或父级标签中使用th:inline='text/javascript/none'-->
+            <div th:inline="text">
+                <p>内联语法：hello, [[${usename}]]</p>
+            </div>
+            <!--js脚本中传递后端的值必须使用脚本内联-->
+            <script th:inline="javascript">
+                    var name=[[${usename}]]+' I love U';
+                    console.log(name);
+            </script>
+            <h3>基本对象</h3>
+            <!--在thymeleaf中，基本对象如同jsp中的基本对象，，但它们以#开头-->
+                <!--1：#ctx:上下文对象-->
+                <!--2：#vars:上下文变量-->
+                <!--3：#locale:区域对象-->
+                <!--4：#request:(仅web环境可用)HttpServletRequest对象-->
+                <!--5：#response:(仅web环境可用)HttpServletResponse对象-->
+                <!--6：#session:(仅web环境可用)HttpSession对象-->
+                <!--7：#servletContext(仅web环境可用)ServletContext对象-->
+            <p th:text="${#request.getAttribute('request')}"></p>
+            <p th:text="${#session.getAttribute('session')}"></p>
+            <p th:text="${#locale.country}"></p>
+
+            <h3>内置变量</h3>
+            <!--thymeleaf提供了一系列Utility对象，内置与Context中，可以通过#直接访问-->
+                <!--1：date 2:calendar 3:numbers 4:strings 5:objects 6:bools 7:arrays 8:lists 9:sets 10:maps ...-->
+
+            <p th:text="|格式化后台时间，${#dates.format(date,'yyyy-MM-dd HH:mm:ss')}|">xjh</p>
+            <p th:text="'创建当前时间（精确到天）'+${#dates.createToday()}"></p>
+            <p th:text="'创建当前时间（精确到秒）'+${#dates.createNow()}"></p>
+            <p th:text="|判断是否为空,${#strings.isEmpty(usename)}|"></p>
+            <p th:text="|判断list是否为空,${#strings.listIsEmpty(users)}|"></p>
+            <p th:text="'输出字符串长度'+${#strings.length(usename)}"></p>
+            <p th:text="'拼接字符串'+${#strings.concat('xjh','xyq')}"></p>
+            <p th:text="'创建自定长度的字符串'+${#strings.randomAlphanumeric(13)}"></p>
+        <h3>thymeleaf表达式共分为5类</h3>
+        <p>1：变量表达式${...},2:选择或星号表达式*{...},3文字国际化表达式#{...},4:url表达式@{}，5：片段表达式~{...}</p>
+        <p th:text="|变量表达式,${usename}|"></p>
+        <p>星号表达式配合th:oject使用，其内容为object属性</p>
+            <div th:object="${user1}">
+                <span th:text="*{name}"></span>
+                <span th:text="*{age}"></span>
+                <span th:text="*{weight}"></span>
+            </div>
+        <p>文字国际化表达式允许我们从外部文件获取区域文字信息，key索引value</p>
+        <p th:text="#{login.username}"></p>
+        <p th:text="#{login.password}"></p>
+        <a th:href="@{/index(lang=zh_CN)}">中文</a>
+        <a th:href="@{/index(lang=en_US)}">英文</a>
+
+        <h3>片段表达式</h3>
+        <p>片段表达式是3.x新增的内容，它是一种标记的片段，并将其移动到模板中的方法，
+            它的优势是可以被复制或者作为参数传递给其他模板</p>
+        <!--片段定义：可以是html标签，也可以使用th:fragment属性定义片断-->
+        <h3>th:insert引用片段</h3>
+            <h4>引用模板整个内容</h4>
+        <div th:insert="~{footer.html}"></div>
+            <h4>引用指定模板的片段</h4>
+        <div th:insert="~{footer.html::frag1}"></div>
+            <h4>引用本页面的片段</h4>
+        <div th:insert="~{::frag3}"></div>
+        <div th:insert="~{this::frag3}"></div>
+            <h4>th:replace th:include与th:insert区别</h4>
+            <div th:replace="~{footer.html::frag1}"></div>
+            <div th:include="~{footer.html::frag1}"></div>
+            <h4>片段选择器的部分用法</h4>
+            <!--<div th:insert="~{footer.html::/div[@id='footer1']}"></div>-->
+            <div th:insert="~{footer.html:://div#footer2}"></div>
+            <div th:insert="~{footer.html::span[class='content']}"></div>
+            <div th:insert="~{footer.html:://span[class='content'][0]}"></div>
+            <div th:insert="~{footer.html:://span.content}"></div>
+            <div th:insert="~{footer.html::span%frag1}"></div>
+        <h3>含有变量的片段引用</h3>
+            <div th:insert="~{footer.html::welcome('MissBear')}"></div>
+        <h3>片段块引用</h3>
+            <p>
+                可以使用th:block定义片断块，th:block是一个属性容器，可以在里面添加任何的th属性。
+                例如表格的循环体中一般在tr中用th:each，也可以用th:block改写。
+            </p>
+                <table>
+                    <th:block th:each="number: ${#numbers.sequence(0,1)}">
+                        <tr>
+                            <td th:text="${number}">
+                            </td>
+                        </tr>
+                    </th:block>
+
+                </table>
+        <h3>删除模板</h3>
+            <p>
+                使用th:remove删除模板，属性值：
+                all：删除当前节点，包括子节点
+                body：删除当前节点的全部子节点
+                tag：删除当前节点，不包括子节点
+                all-but-first：除了当前节点下面的第一个子节点，其它全部删除
+                none：不进行任何操作
+            </p>
+            <table>
+                <th:block th:each="number:${#numbers.sequence(0,1)}">
+                        <tr th:remove="${number>0}?all:none">
+                            <td th:text="${number}">
+                            </td>
+                        </tr>
+                </th:block>
+            </table>
+        <h3>局部变量</h3>
+            <div th:with="frgss=~{footer.html::welcome('MissBearXJH')}">
+                <p th:insert="${frgss}"></p>
+            </div>
+
+
+<!--thymeleaf使用详情请看官网教程 www.thymeleaf.org-->
+
+
+
+        <div th:fragment="frag3">frag3</div>
+
 </body>
 </html>
