@@ -1,0 +1,103 @@
+ll：查询
+vi/vim 编辑
+i:插入
+shift+:   退出编辑
+wq!      保存退出+强制
+！:强制
+q!:强制退出
+xxx reload 服务重新加载 
+
+
+C:\Users\ColorXJH\Documents\WeChat Files\hope-we-can-make-it\FileStorage\File\2019-06
+
+Admin
+1qaz2wsx!!
+
+0000aaaa
+
+edc
+edc123
+
+http://59.1.16.100:17001/sgMain/
+00023153/QAZ123wsx1234$
+
+
+9 10 12 12 13 15 16 17 26 27 28 29
+
+Xjh6603300
+Acunetix will be accessible at https://DESKTOP-O5JSGQM:3443/
+Administrative user email address 1204332316@qq.com
+
+55D3-8628-D9D0-87B7-867F
+
+Welcome to Nessus Essentials
+To get started, launch a host discovery scan to identify what hosts on your network are available to scan. Hosts that are discovered through a discovery scan do not count towards the 16 host limit on your license. 
+
+Enter targets as hostnames, IPv4 addresses, or IPv6 addresses. For IP addresses, you can use CIDR notation (e.g., 192.168.0.0/24), a range (e.g., 192.168.0.1-192.168.0.255), or a comma-separated list (e.g., 192.168.0.0, 192.168.0.1).
+
+Targets
+
+
+
+Java基础：av80585971
+
+数据库
+Mysql：av68811608
+Oracle：av81386804
+JDBC：av68736927
+C3P0：av73840600
+
+前端技术
+HTML、CSS、Javascript：av73840600
+jQuery-：av37976701
+Ajax：av15657082 av15866060
+Vue：av76249419
+微信小程序：av73342655 av40455083
+
+动态网页：av73840600
+
+编程强化
+JVM优化：av70549061
+数据结构算法：av83826038 av78639604
+
+软件项目管理
+Maven： av52364221
+SVN：av73840600 av7959491
+Git：av75718460
+Jenkins：av83089670
+
+热门技术框架
+SSM：av7770852
+Mybatis-Plus ：av69233006
+Spring Data：av71980390
+Spring：av70828462
+
+分布式架构
+Dubbo、Zookeeper：av74933720
+SpringCloud：av77085442 av89898642
+Eureka：av74127911
+Skywalking：av80349807
+
+服务器中间件
+RocketMQ：av66702383
+Kafka：av71991051
+Sharding-JDBC：av68736927
+Redis：av76235738
+MongoDB：av80450883
+
+服务器技术
+Tomcat：av67233983
+Linux系统：av73840600
+CentOS、Virtualbox：av23360560
+Ubuntu、Vmware：av14184325
+
+容器技术
+Docker：av69121091
+
+业务解决方案（实战项目）
+Elasticsearch：av66600360
+Lucene：av77895717
+Quartz：av36062910
+Elastic-Job：av74128695
+SpringSecurity：av74851468
+Activiti：av7670054

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://wwww.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>文件列表</title>
+</head>
+<body>
+        <h2>文件列表</h2>
+        <div th:each="list,iterStat:${lists}">
+            <!--暴露地址-->
+            <!--th:href="@{/download(filename=${list.address})}"-->
+            <!--th:onclick="|download(${list.address})|"  也可以-->
+            <a  th:text="|${iterStat.index},${list.filename}|" th:href="@{/download(filename=${list.address},shortName=${list.filename})}"></a><br/>
+
+        </div>
+        <script th:inline="javascript">
+            function download(fileAddress,shortName){
+                console.log("----------");
+                console.log(fileAddress);
+                console.log(shortName);
+                console.log("----------");
+                var url=window.origin;
+                url=url+"/download?filename="+fileAddress+"&shortName="+shortName;
+                var encodeURI_url = encodeURI(url)
+                console.log(url);
+                window.location.href=url;
+            }
+        </script>
+</body>
+</html>
