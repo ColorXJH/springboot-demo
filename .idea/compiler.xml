@@ -8,9 +8,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springbootjsp" />
+        <module name="springbootthymeleaf" />
+        <module name="springbootfastDFS" />
         <module name="springbootvalidationfilter" />
         <module name="springbootmvc" />
+        <module name="springbootjsp" />
         <module name="hello_world_demos" />
       </profile>
     </annotationProcessing>
@@ -20,8 +22,10 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="hello_world_demos" options="-parameters" />
       <module name="learning_springboot_new" options="" />
+      <module name="springbootfastDFS" options="-parameters" />
       <module name="springbootjsp" options="-parameters" />
       <module name="springbootmvc" options="-parameters" />
+      <module name="springbootthymeleaf" options="-parameters" />
       <module name="springbootvalidationfilter" options="-parameters" />
     </option>
   </component>

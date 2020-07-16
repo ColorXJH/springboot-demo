@@ -15,6 +15,8 @@
         <module>springboot-jsp</module>
         <module>springboot-mvc</module>
         <module>springboot-validation-filter</module>
+        <module>springboot-thymeleaf</module>
+        <module>springboot-fastDFS</module>
     </modules>
     <!--父依赖-->
     <parent>
@@ -49,7 +51,9 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.16.6</version>
+            <!--原因是lombok版本太低，不支持java10以上可能打包编译报错。-->
+            <!-- java.lang.ExceptionInInitializerError: com.sun.tools.javac.code.TypeTags-->
+            <version>1.18.4</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>

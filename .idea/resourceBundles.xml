@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ResourceBundleManager">
+    <file url="file://$PROJECT_DIR$/springboot-thymeleaf/src/main/resources/i18n/myname.properties" />
+    <file url="file://$PROJECT_DIR$/springboot-thymeleaf/src/main/resources/i18n/myname_en_US.properties" />
+    <file url="file://$PROJECT_DIR$/springboot-thymeleaf/src/main/resources/i18n/myname_zh_CN.properties" />
+    <custom-resource-bundle>
+      <file value="file://$PROJECT_DIR$/springboot-thymeleaf/src/main/resources/i18n/myname.properties" />
+      <file value="file://$PROJECT_DIR$/springboot-thymeleaf/src/main/resources/i18n/myname_en_US.properties" />
+      <file value="file://$PROJECT_DIR$/springboot-thymeleaf/src/main/resources/i18n/myname_zh_CN.properties" />
+      <base-name>myname</base-name>
+    </custom-resource-bundle>
+  </component>
+</project>
