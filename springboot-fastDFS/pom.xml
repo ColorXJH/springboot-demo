@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>learning_springboot_new</artifactId>
+        <groupId>com.master</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>springboot-fastDFS</artifactId>
+    <dependencies>
+        <!--FastDFS java客户端-->
+        <!--中央仓库中无该依赖，需要下载该jar包然后打包到本地仓库，下载地址如下：-->
+        <!--https://github.com/happyfish100/fastdfs-client-java-->
+        <!--cmd 进入该文件下 maven clean install-->
+        <dependency>
+            <groupId>org.csource</groupId>
+            <artifactId>fastdfs-client-java</artifactId>
+            <version>1.27-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+    </dependencies>
+
+
+
+    <!--fastdfs是一个开源的轻量级分布式文件系统，适合4KB-500MB的文件传输，不是通用的文件系统，只能通过专有API访问-->
+    <!--目前提供了C,JAVA,PHP 的API-->
+    <!--特性-->
+        <!--文件不分块存储，上传的文件和OS系统中的文件一一对应-->
+        <!--支持相同内容的文件只保存一份，节约磁盘空间-->
+        <!--下载文件支持http协议，可以使用内置的web server,也可以和其他web server配合使用-->
+        <!--支持在线扩容，支持从主文件-->
+        <!--支持并发访问-->
+    <!--FastDFS服务端有三个角色：跟踪服务器tracker server,存储服务器storage server,客户端 client-->
+        <!--tracker server主要做调度工作，起负载均衡作用-->
+        <!--storage server文件和文件属性都存储在该服务器上，该服务器直接利用OS的文件系统调用管理文件-->
+        <!--client是业务请求的发起方，通过专有接口，使用TCP/IP与tracker server和storage server交互-->
+            <!--向使用者提供基本文件访问接口，如upload,dowmload,append,delete-->
+    <!--tracker相当于fastdfs的大脑，不论是上传还是下载都是通过tracker来分配资源，客户端一般可以使用ngnix-->
+    <!--等静态服务器来调用或者做一部分的缓存，存储服务器内部为卷（或组），卷与卷之间是平行的关系-->
+    <!--可以根据资源的使用情况随时增加，卷内服务器文件相互同步备份，以达到容灾的目的-->
+
+    <!--上传机制：-->
+        <!--首先客户端请求tracker服务获得存储服务器的ip地址和端口号，然后客户端根据ip地址和端口号请求上传文件-->
+        <!--存储服务器接受到请求后生产文件，并将文件内容写入磁盘，然后返回给客户端file_id,路径信息，文件名等信息，客户端保存相关信息，上传完毕-->
+            <!--1: storage server定时向tracker上传状态信息-->
+            <!--2: client向tracker上传连接请求-->
+            <!--3: tracker查询可用的storage-->
+            <!--4: tracker返回storage的ip和端口号-->
+            <!--5: client上传文件(file content和metadata)到storage-->
+            <!--6: storage生成file_id并将内容写入磁盘-->
+            <!--7: storage返回file_id(路径信息和文件名)-->
+            <!--8: client存储文件信息-->
+
+    <!--下载机制-->
+        <!--客户端带上文件名信息请求tracker服务获取存储服务器的ip和端口，然后客户端根据返回的ip和端口请求下载文件-->
+        <!--存储服务器接收到请求后返回文件给客户端-->
+            <!--1: storage定时向tracker上传状态信息-->
+            <!--2: client下载连接请求-->
+            <!--3: tracker查询可用的storage(检验同步状态)-->
+            <!--4: tracker返回ip/端口号给client-->
+            <!--5: storage根据client提交来的file_id(组名，路径，文件名)查找文件-->
+            <!--6: storage 返回file content给client-->
+</project>
