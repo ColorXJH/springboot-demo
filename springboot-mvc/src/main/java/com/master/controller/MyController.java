@@ -26,6 +26,7 @@ public class MyController {
         user.setAge(27);
         return user;
     }
+
     @GetMapping("/getUserByName")
     public User getUser(User user){
         log.info("打印输出日志1222"+new Date());
